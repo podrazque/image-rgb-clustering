@@ -1,0 +1,527 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.26)  13 APR 2020 13:37
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**HW5Report.tex
+(./HW5Report.tex
+LaTeX2e <2018-12-01>
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/ncctools/nccmath.sty
+Package: nccmath 2006/01/20 v1.3 Additional Math Commands (NCC)
+\NCC@fracrulewidth=\dimen112
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/02/04 v3.8 Customized lists
+\enitkv@toks@=\toks19
+\labelindent=\skip46
+\enit@outerparindent=\dimen113
+\enit@toks=\toks20
+\enit@inbox=\box29
+\enit@count@id=\count100
+\enitdp@description=\count101
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen114
+\Gin@req@width=\dimen115
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks22
+\inpenc@posthook=\toks23
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count102
+\lst@gtempboxa=\box30
+\lst@token=\toks24
+\lst@length=\count103
+\lst@currlwidth=\dimen116
+\lst@column=\count104
+\lst@pos=\count105
+\lst@lostspace=\dimen117
+\lst@width=\dimen118
+\lst@newlines=\count106
+\lst@lineno=\count107
+\lst@maxwidth=\dimen119
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
+\c@lstnumber=\count108
+\lst@skipnumbers=\count109
+\lst@framebox=\box31
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/02/27 1.8b listings configuration
+))
+Package: listings 2019/02/27 1.8b (Carsten Heinz)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count110
+\float@exts=\toks25
+\float@box=\box32
+\@float@everytoks=\toks26
+\@floatcapt=\box33
+) (./HW5Report.aux)
+\openout1 = `HW5Report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+ (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count111
+\scratchdimen=\dimen120
+\scratchbox=\box34
+\nofMPsegments=\count112
+\nofMParguments=\count113
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen121
+\MPnumerator=\count115
+\makeMPintoPDFobject=\count116
+\everyMPtoPDFconversion=\toks28
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+))))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\c@lstlisting=\count117
+
+Overfull \hbox (20.25192pt too wide) in paragraph at lines 52--52
+ [][] 
+ []
+
+<RobertMixed03.jpg, id=1, 147.30191pt x 110.47644pt>
+File: RobertMixed03.jpg Graphic file (type jpg)
+<use RobertMixed03.jpg>
+Package pdftex.def Info: RobertMixed03.jpg  used on input line 65.
+(pdftex.def)             Requested size: 241.49895pt x 181.12859pt.
+[1
+
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Rober
+tMixed03.jpg>] [2]
+<Convergence_parta_10.png, id=16, 379.4175pt x 248.93pt>
+File: Convergence_parta_10.png Graphic file (type png)
+<use Convergence_parta_10.png>
+Package pdftex.def Info: Convergence_parta_10.png  used on input line 188.
+(pdftex.def)             Requested size: 241.49895pt x 158.44482pt.
+ [3]
+<parta_10_means.png, id=21, 642.4pt x 481.8pt>
+File: parta_10_means.png Graphic file (type png)
+<use parta_10_means.png>
+Package pdftex.def Info: parta_10_means.png  used on input line 198.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+<parta_20_means.png, id=22, 642.4pt x 481.8pt>
+File: parta_20_means.png Graphic file (type png)
+<use parta_20_means.png>
+Package pdftex.def Info: parta_20_means.png  used on input line 205.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+ [4 <./Convergence_parta_10.png> <./parta_10_means.png>]
+<parta_50_means.png, id=28, 642.4pt x 481.8pt>
+File: parta_50_means.png Graphic file (type png)
+<use parta_50_means.png>
+Package pdftex.def Info: parta_50_means.png  used on input line 212.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+ [5 <./parta_20_means.png> <./parta_50_means.png>] [6]
+<partb_wts_cluster0.png, id=37, 642.4pt x 481.8pt>
+File: partb_wts_cluster0.png Graphic file (type png)
+<use partb_wts_cluster0.png>
+Package pdftex.def Info: partb_wts_cluster0.png  used on input line 296.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+<partb_wts_cluster1.png, id=38, 642.4pt x 481.8pt>
+File: partb_wts_cluster1.png Graphic file (type png)
+<use partb_wts_cluster1.png>
+Package pdftex.def Info: partb_wts_cluster1.png  used on input line 302.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+<partb_wts_cluster2.png, id=39, 642.4pt x 481.8pt>
+File: partb_wts_cluster2.png Graphic file (type png)
+<use partb_wts_cluster2.png>
+Package pdftex.def Info: partb_wts_cluster2.png  used on input line 308.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+ [7 <./partb_wts_cluster0.png> <./partb_wts_cluster1.png>]
+<partb_wts_cluster3.png, id=44, 642.4pt x 481.8pt>
+File: partb_wts_cluster3.png Graphic file (type png)
+<use partb_wts_cluster3.png>
+Package pdftex.def Info: partb_wts_cluster3.png  used on input line 314.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+<partb_wts_cluster4.png, id=45, 642.4pt x 481.8pt>
+File: partb_wts_cluster4.png Graphic file (type png)
+<use partb_wts_cluster4.png>
+Package pdftex.def Info: partb_wts_cluster4.png  used on input line 320.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+ [8 <./partb_wts_cluster2.png> <./partb_wts_cluster3.png>]
+<partb_wts_cluster5.png, id=49, 642.4pt x 481.8pt>
+File: partb_wts_cluster5.png Graphic file (type png)
+<use partb_wts_cluster5.png>
+Package pdftex.def Info: partb_wts_cluster5.png  used on input line 326.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+<partb_wts_cluster6.png, id=50, 642.4pt x 481.8pt>
+File: partb_wts_cluster6.png Graphic file (type png)
+<use partb_wts_cluster6.png>
+Package pdftex.def Info: partb_wts_cluster6.png  used on input line 332.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+ [9 <./partb_wts_cluster4.png> <./partb_wts_cluster5.png>]
+<partb_wts_cluster7.png, id=54, 642.4pt x 481.8pt>
+File: partb_wts_cluster7.png Graphic file (type png)
+<use partb_wts_cluster7.png>
+Package pdftex.def Info: partb_wts_cluster7.png  used on input line 338.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+<partb_wts_cluster8.png, id=55, 642.4pt x 481.8pt>
+File: partb_wts_cluster8.png Graphic file (type png)
+<use partb_wts_cluster8.png>
+Package pdftex.def Info: partb_wts_cluster8.png  used on input line 344.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+
+[10 <./partb_wts_cluster6.png> <./partb_wts_cluster7.png>]
+<partb_wts_cluster9.png, id=59, 642.4pt x 481.8pt>
+File: partb_wts_cluster9.png Graphic file (type png)
+<use partb_wts_cluster9.png>
+Package pdftex.def Info: partb_wts_cluster9.png  used on input line 350.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+ [11 <./partb_wts_cluster8.png> <./partb_wts_cluster9.png>]
+<Convergence_partb_10.png, id=64, 385.44pt x 248.93pt>
+File: Convergence_partb_10.png Graphic file (type png)
+<use Convergence_partb_10.png>
+Package pdftex.def Info: Convergence_partb_10.png  used on input line 393.
+(pdftex.def)             Requested size: 241.49895pt x 155.96829pt.
+<partc_10_means.png, id=65, 642.4pt x 481.8pt>
+File: partc_10_means.png Graphic file (type png)
+<use partc_10_means.png>
+Package pdftex.def Info: partc_10_means.png  used on input line 402.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+ [12 <./Convergence_partb_10.png>]
+<partc_20_means.png, id=70, 642.4pt x 481.8pt>
+File: partc_20_means.png Graphic file (type png)
+<use partc_20_means.png>
+Package pdftex.def Info: partc_20_means.png  used on input line 408.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+<partc_50_means.png, id=71, 642.4pt x 481.8pt>
+File: partc_50_means.png Graphic file (type png)
+<use partc_50_means.png>
+Package pdftex.def Info: partc_50_means.png  used on input line 414.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+
+[13 <./partc_10_means.png> <./partc_20_means.png>]
+<partc_wts_cluster0.png, id=78, 642.4pt x 481.8pt>
+File: partc_wts_cluster0.png Graphic file (type png)
+<use partc_wts_cluster0.png>
+Package pdftex.def Info: partc_wts_cluster0.png  used on input line 422.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+<partc_wts_cluster1.png, id=79, 642.4pt x 481.8pt>
+File: partc_wts_cluster1.png Graphic file (type png)
+<use partc_wts_cluster1.png>
+Package pdftex.def Info: partc_wts_cluster1.png  used on input line 428.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+ [14 <./partc_50_means.png> <./partc_wts_cluster0.png>]
+<partc_wts_cluster2.png, id=84, 642.4pt x 481.8pt>
+File: partc_wts_cluster2.png Graphic file (type png)
+<use partc_wts_cluster2.png>
+Package pdftex.def Info: partc_wts_cluster2.png  used on input line 434.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+<partc_wts_cluster3.png, id=85, 642.4pt x 481.8pt>
+File: partc_wts_cluster3.png Graphic file (type png)
+<use partc_wts_cluster3.png>
+Package pdftex.def Info: partc_wts_cluster3.png  used on input line 440.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+ [15 <./partc_wts_cluster1.png> <./partc_wts_cluster2.png>]
+<partc_wts_cluster4.png, id=89, 642.4pt x 481.8pt>
+File: partc_wts_cluster4.png Graphic file (type png)
+<use partc_wts_cluster4.png>
+Package pdftex.def Info: partc_wts_cluster4.png  used on input line 446.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+<partc_wts_cluster5.png, id=90, 642.4pt x 481.8pt>
+File: partc_wts_cluster5.png Graphic file (type png)
+<use partc_wts_cluster5.png>
+Package pdftex.def Info: partc_wts_cluster5.png  used on input line 452.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+ [16 <./partc_wts_cluster3.png> <./partc_wts_cluster4.png>]
+<partc_wts_cluster6.png, id=94, 642.4pt x 481.8pt>
+File: partc_wts_cluster6.png Graphic file (type png)
+<use partc_wts_cluster6.png>
+Package pdftex.def Info: partc_wts_cluster6.png  used on input line 458.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+<partc_wts_cluster7.png, id=95, 642.4pt x 481.8pt>
+File: partc_wts_cluster7.png Graphic file (type png)
+<use partc_wts_cluster7.png>
+Package pdftex.def Info: partc_wts_cluster7.png  used on input line 464.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+ [17 <./partc_wts_cluster5.png> <./partc_wts_cluster6.png>]
+<partc_wts_cluster8.png, id=99, 642.4pt x 481.8pt>
+File: partc_wts_cluster8.png Graphic file (type png)
+<use partc_wts_cluster8.png>
+Package pdftex.def Info: partc_wts_cluster8.png  used on input line 470.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+<partc_wts_cluster9.png, id=100, 642.4pt x 481.8pt>
+File: partc_wts_cluster9.png Graphic file (type png)
+<use partc_wts_cluster9.png>
+Package pdftex.def Info: partc_wts_cluster9.png  used on input line 476.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+ [18 <./partc_wts_cluster7.png> <./partc_wts_cluster8.png>] [19 <./partc_wts_cl
+uster9.png>]
+<Convergence_partd_10.png, id=108, 379.4175pt x 248.93pt>
+File: Convergence_partd_10.png Graphic file (type png)
+<use Convergence_partd_10.png>
+Package pdftex.def Info: Convergence_partd_10.png  used on input line 519.
+(pdftex.def)             Requested size: 241.49895pt x 158.44482pt.
+<partd_10_means.png, id=109, 642.4pt x 481.8pt>
+File: partd_10_means.png Graphic file (type png)
+<use partd_10_means.png>
+Package pdftex.def Info: partd_10_means.png  used on input line 528.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+<partd_20_means.png, id=110, 642.4pt x 481.8pt>
+File: partd_20_means.png Graphic file (type png)
+<use partd_20_means.png>
+Package pdftex.def Info: partd_20_means.png  used on input line 534.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+ [20 <./Convergence_partd_10.png> <./partd_10_means.png>]
+<partd_50_means.png, id=116, 642.4pt x 481.8pt>
+File: partd_50_means.png Graphic file (type png)
+<use partd_50_means.png>
+Package pdftex.def Info: partd_50_means.png  used on input line 540.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+<partd_wts_cluster0.png, id=117, 642.4pt x 481.8pt>
+File: partd_wts_cluster0.png Graphic file (type png)
+<use partd_wts_cluster0.png>
+Package pdftex.def Info: partd_wts_cluster0.png  used on input line 548.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+ [21 <./partd_20_means.png> <./partd_50_means.png>]
+<partd_wts_cluster1.png, id=123, 642.4pt x 481.8pt>
+File: partd_wts_cluster1.png Graphic file (type png)
+<use partd_wts_cluster1.png>
+Package pdftex.def Info: partd_wts_cluster1.png  used on input line 554.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+<partd_wts_cluster2.png, id=124, 642.4pt x 481.8pt>
+File: partd_wts_cluster2.png Graphic file (type png)
+<use partd_wts_cluster2.png>
+Package pdftex.def Info: partd_wts_cluster2.png  used on input line 560.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+ [22 <./partd_wts_cluster0.png> <./partd_wts_cluster1.png>]
+<partd_wts_cluster3.png, id=128, 642.4pt x 481.8pt>
+File: partd_wts_cluster3.png Graphic file (type png)
+<use partd_wts_cluster3.png>
+Package pdftex.def Info: partd_wts_cluster3.png  used on input line 566.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+<partd_wts_cluster4.png, id=129, 642.4pt x 481.8pt>
+File: partd_wts_cluster4.png Graphic file (type png)
+<use partd_wts_cluster4.png>
+Package pdftex.def Info: partd_wts_cluster4.png  used on input line 572.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+ [23 <./partd_wts_cluster2.png> <./partd_wts_cluster3.png>]
+<partd_wts_cluster5.png, id=133, 642.4pt x 481.8pt>
+File: partd_wts_cluster5.png Graphic file (type png)
+<use partd_wts_cluster5.png>
+Package pdftex.def Info: partd_wts_cluster5.png  used on input line 578.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+<partd_wts_cluster6.png, id=134, 642.4pt x 481.8pt>
+File: partd_wts_cluster6.png Graphic file (type png)
+<use partd_wts_cluster6.png>
+Package pdftex.def Info: partd_wts_cluster6.png  used on input line 584.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+ [24 <./partd_wts_cluster4.png> <./partd_wts_cluster5.png>]
+<partd_wts_cluster7.png, id=138, 642.4pt x 481.8pt>
+File: partd_wts_cluster7.png Graphic file (type png)
+<use partd_wts_cluster7.png>
+Package pdftex.def Info: partd_wts_cluster7.png  used on input line 590.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+<partd_wts_cluster8.png, id=139, 642.4pt x 481.8pt>
+File: partd_wts_cluster8.png Graphic file (type png)
+<use partd_wts_cluster8.png>
+Package pdftex.def Info: partd_wts_cluster8.png  used on input line 596.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+ [25 <./partd_wts_cluster6.png> <./partd_wts_cluster7.png>]
+<partd_wts_cluster9.png, id=144, 642.4pt x 481.8pt>
+File: partd_wts_cluster9.png Graphic file (type png)
+<use partd_wts_cluster9.png>
+Package pdftex.def Info: partd_wts_cluster9.png  used on input line 602.
+(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
+ [26 <./partd_wts_cluster8.png> <./partd_wts_cluster9.png>]
+(./HW5Report.aux) ) 
+Here is how much of TeX's memory you used:
+ 4813 strings out of 492616
+ 66957 string characters out of 6129481
+ 340634 words of memory out of 5000000
+ 8646 multiletter control sequences out of 15000+600000
+ 9051 words of font info for 34 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,6n,35p,329b,1591s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
+8.pfb>
+Output written on HW5Report.pdf (26 pages, 2414231 bytes).
+PDF statistics:
+ 172 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 216 words of extra memory for PDF output out of 10000 (max. 10000000)
+
