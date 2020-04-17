@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.26)  13 APR 2020 13:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.26)  17 APR 2020 14:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -266,250 +266,96 @@ Package pdftex.def Info: RobertMixed03.jpg  used on input line 65.
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Rober
 tMixed03.jpg>] [2]
-<Convergence_parta_10.png, id=16, 379.4175pt x 248.93pt>
-File: Convergence_parta_10.png Graphic file (type png)
-<use Convergence_parta_10.png>
-Package pdftex.def Info: Convergence_parta_10.png  used on input line 188.
-(pdftex.def)             Requested size: 241.49895pt x 158.44482pt.
+<fish_parta_means_10.png, id=16, 331.2375pt x 252.945pt>
+File: fish_parta_means_10.png Graphic file (type png)
+<use fish_parta_means_10.png>
+Package pdftex.def Info: fish_parta_means_10.png  used on input line 193.
+(pdftex.def)             Requested size: 241.49895pt x 184.41673pt.
  [3]
-<parta_10_means.png, id=21, 642.4pt x 481.8pt>
-File: parta_10_means.png Graphic file (type png)
-<use parta_10_means.png>
-Package pdftex.def Info: parta_10_means.png  used on input line 198.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
-<parta_20_means.png, id=22, 642.4pt x 481.8pt>
-File: parta_20_means.png Graphic file (type png)
-<use parta_20_means.png>
-Package pdftex.def Info: parta_20_means.png  used on input line 205.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
- [4 <./Convergence_parta_10.png> <./parta_10_means.png>]
-<parta_50_means.png, id=28, 642.4pt x 481.8pt>
-File: parta_50_means.png Graphic file (type png)
-<use parta_50_means.png>
-Package pdftex.def Info: parta_50_means.png  used on input line 212.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
- [5 <./parta_20_means.png> <./parta_50_means.png>] [6]
-<partb_wts_cluster0.png, id=37, 642.4pt x 481.8pt>
-File: partb_wts_cluster0.png Graphic file (type png)
-<use partb_wts_cluster0.png>
-Package pdftex.def Info: partb_wts_cluster0.png  used on input line 296.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
-<partb_wts_cluster1.png, id=38, 642.4pt x 481.8pt>
-File: partb_wts_cluster1.png Graphic file (type png)
-<use partb_wts_cluster1.png>
-Package pdftex.def Info: partb_wts_cluster1.png  used on input line 302.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
-<partb_wts_cluster2.png, id=39, 642.4pt x 481.8pt>
-File: partb_wts_cluster2.png Graphic file (type png)
-<use partb_wts_cluster2.png>
-Package pdftex.def Info: partb_wts_cluster2.png  used on input line 308.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
- [7 <./partb_wts_cluster0.png> <./partb_wts_cluster1.png>]
-<partb_wts_cluster3.png, id=44, 642.4pt x 481.8pt>
-File: partb_wts_cluster3.png Graphic file (type png)
-<use partb_wts_cluster3.png>
-Package pdftex.def Info: partb_wts_cluster3.png  used on input line 314.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
-<partb_wts_cluster4.png, id=45, 642.4pt x 481.8pt>
-File: partb_wts_cluster4.png Graphic file (type png)
-<use partb_wts_cluster4.png>
-Package pdftex.def Info: partb_wts_cluster4.png  used on input line 320.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
- [8 <./partb_wts_cluster2.png> <./partb_wts_cluster3.png>]
-<partb_wts_cluster5.png, id=49, 642.4pt x 481.8pt>
-File: partb_wts_cluster5.png Graphic file (type png)
-<use partb_wts_cluster5.png>
-Package pdftex.def Info: partb_wts_cluster5.png  used on input line 326.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
-<partb_wts_cluster6.png, id=50, 642.4pt x 481.8pt>
-File: partb_wts_cluster6.png Graphic file (type png)
-<use partb_wts_cluster6.png>
-Package pdftex.def Info: partb_wts_cluster6.png  used on input line 332.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
- [9 <./partb_wts_cluster4.png> <./partb_wts_cluster5.png>]
-<partb_wts_cluster7.png, id=54, 642.4pt x 481.8pt>
-File: partb_wts_cluster7.png Graphic file (type png)
-<use partb_wts_cluster7.png>
-Package pdftex.def Info: partb_wts_cluster7.png  used on input line 338.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
-<partb_wts_cluster8.png, id=55, 642.4pt x 481.8pt>
-File: partb_wts_cluster8.png Graphic file (type png)
-<use partb_wts_cluster8.png>
-Package pdftex.def Info: partb_wts_cluster8.png  used on input line 344.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
-
-[10 <./partb_wts_cluster6.png> <./partb_wts_cluster7.png>]
-<partb_wts_cluster9.png, id=59, 642.4pt x 481.8pt>
-File: partb_wts_cluster9.png Graphic file (type png)
-<use partb_wts_cluster9.png>
-Package pdftex.def Info: partb_wts_cluster9.png  used on input line 350.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
- [11 <./partb_wts_cluster8.png> <./partb_wts_cluster9.png>]
-<Convergence_partb_10.png, id=64, 385.44pt x 248.93pt>
-File: Convergence_partb_10.png Graphic file (type png)
-<use Convergence_partb_10.png>
-Package pdftex.def Info: Convergence_partb_10.png  used on input line 393.
-(pdftex.def)             Requested size: 241.49895pt x 155.96829pt.
-<partc_10_means.png, id=65, 642.4pt x 481.8pt>
-File: partc_10_means.png Graphic file (type png)
-<use partc_10_means.png>
-Package pdftex.def Info: partc_10_means.png  used on input line 402.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
- [12 <./Convergence_partb_10.png>]
-<partc_20_means.png, id=70, 642.4pt x 481.8pt>
-File: partc_20_means.png Graphic file (type png)
-<use partc_20_means.png>
-Package pdftex.def Info: partc_20_means.png  used on input line 408.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
-<partc_50_means.png, id=71, 642.4pt x 481.8pt>
-File: partc_50_means.png Graphic file (type png)
-<use partc_50_means.png>
-Package pdftex.def Info: partc_50_means.png  used on input line 414.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
-
-[13 <./partc_10_means.png> <./partc_20_means.png>]
-<partc_wts_cluster0.png, id=78, 642.4pt x 481.8pt>
-File: partc_wts_cluster0.png Graphic file (type png)
-<use partc_wts_cluster0.png>
-Package pdftex.def Info: partc_wts_cluster0.png  used on input line 422.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
-<partc_wts_cluster1.png, id=79, 642.4pt x 481.8pt>
-File: partc_wts_cluster1.png Graphic file (type png)
-<use partc_wts_cluster1.png>
-Package pdftex.def Info: partc_wts_cluster1.png  used on input line 428.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
- [14 <./partc_50_means.png> <./partc_wts_cluster0.png>]
-<partc_wts_cluster2.png, id=84, 642.4pt x 481.8pt>
-File: partc_wts_cluster2.png Graphic file (type png)
-<use partc_wts_cluster2.png>
-Package pdftex.def Info: partc_wts_cluster2.png  used on input line 434.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
-<partc_wts_cluster3.png, id=85, 642.4pt x 481.8pt>
-File: partc_wts_cluster3.png Graphic file (type png)
-<use partc_wts_cluster3.png>
-Package pdftex.def Info: partc_wts_cluster3.png  used on input line 440.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
- [15 <./partc_wts_cluster1.png> <./partc_wts_cluster2.png>]
-<partc_wts_cluster4.png, id=89, 642.4pt x 481.8pt>
-File: partc_wts_cluster4.png Graphic file (type png)
-<use partc_wts_cluster4.png>
-Package pdftex.def Info: partc_wts_cluster4.png  used on input line 446.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
-<partc_wts_cluster5.png, id=90, 642.4pt x 481.8pt>
-File: partc_wts_cluster5.png Graphic file (type png)
-<use partc_wts_cluster5.png>
-Package pdftex.def Info: partc_wts_cluster5.png  used on input line 452.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
- [16 <./partc_wts_cluster3.png> <./partc_wts_cluster4.png>]
-<partc_wts_cluster6.png, id=94, 642.4pt x 481.8pt>
-File: partc_wts_cluster6.png Graphic file (type png)
-<use partc_wts_cluster6.png>
-Package pdftex.def Info: partc_wts_cluster6.png  used on input line 458.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
-<partc_wts_cluster7.png, id=95, 642.4pt x 481.8pt>
-File: partc_wts_cluster7.png Graphic file (type png)
-<use partc_wts_cluster7.png>
-Package pdftex.def Info: partc_wts_cluster7.png  used on input line 464.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
- [17 <./partc_wts_cluster5.png> <./partc_wts_cluster6.png>]
-<partc_wts_cluster8.png, id=99, 642.4pt x 481.8pt>
-File: partc_wts_cluster8.png Graphic file (type png)
-<use partc_wts_cluster8.png>
-Package pdftex.def Info: partc_wts_cluster8.png  used on input line 470.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
-<partc_wts_cluster9.png, id=100, 642.4pt x 481.8pt>
-File: partc_wts_cluster9.png Graphic file (type png)
-<use partc_wts_cluster9.png>
-Package pdftex.def Info: partc_wts_cluster9.png  used on input line 476.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
- [18 <./partc_wts_cluster7.png> <./partc_wts_cluster8.png>] [19 <./partc_wts_cl
-uster9.png>]
-<Convergence_partd_10.png, id=108, 379.4175pt x 248.93pt>
-File: Convergence_partd_10.png Graphic file (type png)
-<use Convergence_partd_10.png>
-Package pdftex.def Info: Convergence_partd_10.png  used on input line 519.
-(pdftex.def)             Requested size: 241.49895pt x 158.44482pt.
-<partd_10_means.png, id=109, 642.4pt x 481.8pt>
-File: partd_10_means.png Graphic file (type png)
-<use partd_10_means.png>
-Package pdftex.def Info: partd_10_means.png  used on input line 528.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
-<partd_20_means.png, id=110, 642.4pt x 481.8pt>
-File: partd_20_means.png Graphic file (type png)
-<use partd_20_means.png>
-Package pdftex.def Info: partd_20_means.png  used on input line 534.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
- [20 <./Convergence_partd_10.png> <./partd_10_means.png>]
-<partd_50_means.png, id=116, 642.4pt x 481.8pt>
-File: partd_50_means.png Graphic file (type png)
-<use partd_50_means.png>
-Package pdftex.def Info: partd_50_means.png  used on input line 540.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
-<partd_wts_cluster0.png, id=117, 642.4pt x 481.8pt>
-File: partd_wts_cluster0.png Graphic file (type png)
-<use partd_wts_cluster0.png>
-Package pdftex.def Info: partd_wts_cluster0.png  used on input line 548.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
- [21 <./partd_20_means.png> <./partd_50_means.png>]
-<partd_wts_cluster1.png, id=123, 642.4pt x 481.8pt>
-File: partd_wts_cluster1.png Graphic file (type png)
-<use partd_wts_cluster1.png>
-Package pdftex.def Info: partd_wts_cluster1.png  used on input line 554.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
-<partd_wts_cluster2.png, id=124, 642.4pt x 481.8pt>
-File: partd_wts_cluster2.png Graphic file (type png)
-<use partd_wts_cluster2.png>
-Package pdftex.def Info: partd_wts_cluster2.png  used on input line 560.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
- [22 <./partd_wts_cluster0.png> <./partd_wts_cluster1.png>]
-<partd_wts_cluster3.png, id=128, 642.4pt x 481.8pt>
-File: partd_wts_cluster3.png Graphic file (type png)
-<use partd_wts_cluster3.png>
-Package pdftex.def Info: partd_wts_cluster3.png  used on input line 566.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
-<partd_wts_cluster4.png, id=129, 642.4pt x 481.8pt>
-File: partd_wts_cluster4.png Graphic file (type png)
-<use partd_wts_cluster4.png>
-Package pdftex.def Info: partd_wts_cluster4.png  used on input line 572.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
- [23 <./partd_wts_cluster2.png> <./partd_wts_cluster3.png>]
-<partd_wts_cluster5.png, id=133, 642.4pt x 481.8pt>
-File: partd_wts_cluster5.png Graphic file (type png)
-<use partd_wts_cluster5.png>
-Package pdftex.def Info: partd_wts_cluster5.png  used on input line 578.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
-<partd_wts_cluster6.png, id=134, 642.4pt x 481.8pt>
-File: partd_wts_cluster6.png Graphic file (type png)
-<use partd_wts_cluster6.png>
-Package pdftex.def Info: partd_wts_cluster6.png  used on input line 584.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
- [24 <./partd_wts_cluster4.png> <./partd_wts_cluster5.png>]
-<partd_wts_cluster7.png, id=138, 642.4pt x 481.8pt>
-File: partd_wts_cluster7.png Graphic file (type png)
-<use partd_wts_cluster7.png>
-Package pdftex.def Info: partd_wts_cluster7.png  used on input line 590.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
-<partd_wts_cluster8.png, id=139, 642.4pt x 481.8pt>
-File: partd_wts_cluster8.png Graphic file (type png)
-<use partd_wts_cluster8.png>
-Package pdftex.def Info: partd_wts_cluster8.png  used on input line 596.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
- [25 <./partd_wts_cluster6.png> <./partd_wts_cluster7.png>]
-<partd_wts_cluster9.png, id=144, 642.4pt x 481.8pt>
-File: partd_wts_cluster9.png Graphic file (type png)
-<use partd_wts_cluster9.png>
-Package pdftex.def Info: partd_wts_cluster9.png  used on input line 602.
-(pdftex.def)             Requested size: 241.49895pt x 181.123pt.
- [26 <./partd_wts_cluster8.png> <./partd_wts_cluster9.png>]
+<fish_parta_means_20.png, id=21, 331.2375pt x 252.945pt>
+File: fish_parta_means_20.png Graphic file (type png)
+<use fish_parta_means_20.png>
+Package pdftex.def Info: fish_parta_means_20.png  used on input line 200.
+(pdftex.def)             Requested size: 241.49895pt x 184.41673pt.
+<fish_parta_means_50.png, id=22, 331.2375pt x 252.945pt>
+File: fish_parta_means_50.png Graphic file (type png)
+<use fish_parta_means_50.png>
+Package pdftex.def Info: fish_parta_means_50.png  used on input line 207.
+(pdftex.def)             Requested size: 241.49895pt x 184.41673pt.
+ [4 <./fish_parta_means_10.png> <./fish_parta_means_20.png>] [5 <./fish_parta_m
+eans_50.png>]
+<fish_wts_partb.png, id=32, 503.8825pt x 684.5575pt>
+File: fish_wts_partb.png Graphic file (type png)
+<use fish_wts_partb.png>
+Package pdftex.def Info: fish_wts_partb.png  used on input line 283.
+(pdftex.def)             Requested size: 241.49895pt x 328.09293pt.
+ [6] [7 <./fish_wts_partb.png>]
+<fish_partc_means_10_400.png, id=42, 331.2375pt x 252.945pt>
+File: fish_partc_means_10_400.png Graphic file (type png)
+<use fish_partc_means_10_400.png>
+Package pdftex.def Info: fish_partc_means_10_400.png  used on input line 330.
+(pdftex.def)             Requested size: 241.49895pt x 184.41673pt.
+<fish_partc_means_10.png, id=43, 331.2375pt x 252.945pt>
+File: fish_partc_means_10.png Graphic file (type png)
+<use fish_partc_means_10.png>
+Package pdftex.def Info: fish_partc_means_10.png  used on input line 336.
+(pdftex.def)             Requested size: 241.49895pt x 184.41673pt.
+ [8 <./fish_partc_means_10_400.png>]
+<fish_partc_means_20.png, id=48, 331.2375pt x 252.945pt>
+File: fish_partc_means_20.png Graphic file (type png)
+<use fish_partc_means_20.png>
+Package pdftex.def Info: fish_partc_means_20.png  used on input line 343.
+(pdftex.def)             Requested size: 241.49895pt x 184.41673pt.
+<fish_partc_means_50.png, id=49, 331.2375pt x 252.945pt>
+File: fish_partc_means_50.png Graphic file (type png)
+<use fish_partc_means_50.png>
+Package pdftex.def Info: fish_partc_means_50.png  used on input line 350.
+(pdftex.def)             Requested size: 241.49895pt x 184.41673pt.
+ [9 <./fish_partc_means_10.png> <./fish_partc_means_20.png>]
+<fish_wts_partc_10.png, id=55, 503.8825pt x 684.5575pt>
+File: fish_wts_partc_10.png Graphic file (type png)
+<use fish_wts_partc_10.png>
+Package pdftex.def Info: fish_wts_partc_10.png  used on input line 359.
+(pdftex.def)             Requested size: 241.49895pt x 328.09293pt.
+ [10 <./fish_partc_means_50.png>]
+<fish_wts_partc_400.png, id=60, 503.8825pt x 684.5575pt>
+File: fish_wts_partc_400.png Graphic file (type png)
+<use fish_wts_partc_400.png>
+Package pdftex.def Info: fish_wts_partc_400.png  used on input line 365.
+(pdftex.def)             Requested size: 241.49895pt x 328.09293pt.
+ [11 <./fish_wts_partc_10.png>] [12 <./fish_wts_partc_400.png>]
+<fish_partd_means_10.png, id=69, 331.2375pt x 252.945pt>
+File: fish_partd_means_10.png Graphic file (type png)
+<use fish_partd_means_10.png>
+Package pdftex.def Info: fish_partd_means_10.png  used on input line 413.
+(pdftex.def)             Requested size: 241.49895pt x 184.41673pt.
+<fish_partd_means_20.png, id=70, 331.2375pt x 252.945pt>
+File: fish_partd_means_20.png Graphic file (type png)
+<use fish_partd_means_20.png>
+Package pdftex.def Info: fish_partd_means_20.png  used on input line 420.
+(pdftex.def)             Requested size: 241.49895pt x 184.41673pt.
+ [13 <./fish_partd_means_10.png>]
+<fish_partd_means_50.png, id=76, 331.2375pt x 252.945pt>
+File: fish_partd_means_50.png Graphic file (type png)
+<use fish_partd_means_50.png>
+Package pdftex.def Info: fish_partd_means_50.png  used on input line 427.
+(pdftex.def)             Requested size: 241.49895pt x 184.41673pt.
+<fish_wts_partd.png, id=77, 503.8825pt x 684.5575pt>
+File: fish_wts_partd.png Graphic file (type png)
+<use fish_wts_partd.png>
+Package pdftex.def Info: fish_wts_partd.png  used on input line 435.
+(pdftex.def)             Requested size: 241.49895pt x 328.09293pt.
+ [14 <./fish_partd_means_20.png> <./fish_partd_means_50.png>] [15 <./fish_wts_p
+artd.png>]
 (./HW5Report.aux) ) 
 Here is how much of TeX's memory you used:
- 4813 strings out of 492616
- 66957 string characters out of 6129481
- 340634 words of memory out of 5000000
- 8646 multiletter control sequences out of 15000+600000
+ 4673 strings out of 492616
+ 63520 string characters out of 6129481
+ 333634 words of memory out of 5000000
+ 8534 multiletter control sequences out of 15000+600000
  9051 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,35p,329b,1591s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,6n,35p,385b,1591s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfont
@@ -518,10 +364,10 @@ cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mr5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
 8.pfb>
-Output written on HW5Report.pdf (26 pages, 2414231 bytes).
+Output written on HW5Report.pdf (15 pages, 916106 bytes).
 PDF statistics:
- 172 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
+ 111 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 216 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

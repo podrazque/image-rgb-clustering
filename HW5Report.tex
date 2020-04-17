@@ -37,7 +37,7 @@
 
 \title{CEE 498 Applied Machine Learning - HW5}  % Declares the document's title.
 \author{Rini Jasmine Gladstone (rjg7) and Maksymillian Podraza(podraza3)}      % Declares the author's name.
-\date{April 13, 2020}      % Deleting this command produces today's date.
+\date{April 17, 2020}      % Deleting this command produces today's date.
 
 \newcommand{\ip}[2]{(#1, #2)}
                              % Defines \ip{arg1}{arg2} to mean
@@ -114,11 +114,14 @@ rgb_matrix_list = rgb_extract(r)
 rgb_normalized_list = rgb_normalize(rgb_matrix_list)
 \end{lstlisting}
 
-Then, we wrote the function for EM.
+Then, we wrote the function for EM. We used K means to initialize the mean vector. 
 \begin{lstlisting}
 def EM_function(X,cov,k,niter):    
         weights = np.ones((k)) / k
-        means = np.random.choice(X.values.flatten(), (k,X.shape[1]))
+        kmeans = KMeans(n_clusters=k)
+        # fit kmeans object to data
+        kmeans.fit(X)
+        means = kmeans.cluster_centers_
         eps=1e-8
         likelihood = []
         log_likelihoods = []
@@ -126,7 +129,7 @@ def EM_function(X,cov,k,niter):
             likelihood = []
             # Expectation step
             for j in range(k):
-                likelihood.append(multivariate_normal.pdf(x=X, mean=means[j], cov=cov[j],allow_singular=True))
+                likelihood.append(multivariate_normal.pdf(x=X, mean=means[j], cov=cov[j]))
             likelihood = np.array(likelihood)
             assert likelihood.shape == (k, len(X))
             b = []
@@ -137,18 +140,17 @@ def EM_function(X,cov,k,niter):
                 b.append((likelihood[j] * weights[j]) / (np.sum([likelihood[i] * weights[i] for i in range(k)], axis=0)+eps))
                 # update mean and variance
                 means[j] = np.sum(b[j].reshape(len(X),1) * X, axis=0) / (np.sum(b[j]+eps))
-                cov[j] = np.dot((b[j].reshape(len(X),1) * (X - means[j])).T, (X - means[j])) / (np.sum(b[j])+eps)
                 # update the weights
                 weights[j] = np.mean(b[j])
                 assert cov.shape == (k, X.shape[1], X.shape[1])
                 assert means.shape == (k, X.shape[1])
-            log_likelihoods.append(np.log(np.sum([k*multivariate_normal(means[i],cov[j],allow_singular=True).pdf(X) for k,i,j in zip(weights,range(len(means)),range(len(cov)))])))
+            log_likelihoods.append(np.log(np.sum([k*multivariate_normal(means[i],cov[j]).pdf(X) for k,i,j in zip(weights,range(len(means)),range(len(cov)))])))
             if (step+1)%100==0 and (step+1)>=100:
                 print(step+1)
-        return means,cov,weights,b,log_likelihoods,likelihood
+        return means,weights,b,log_likelihoods,likelihood
 \end{lstlisting}
 
-We set the initial covariance matrix (cov) to be identity matrix and ran the following code setting k = 10, 20 and 50.
+We set the covariance matrix (cov) to be identity matrix and ran the following code setting k = 10, 20 and 50.
 
 \begin{lstlisting}
 rvalues=rgb_normalized_list[0].values.flatten()
@@ -163,7 +165,7 @@ cov = []
 for i in range(k):
     cov.append(np.eye(data.shape[1]))
 cov = np.array(cov)
-means,cov,weights,b,log_likelihoods,likelihood=EM_function(data,cov,k,1000)
+means,weights,b,log_likelihoods,likelihood=EM_function(data,cov,k,200)
 #Plotting the log-likelihood
 plt.plot(log_likelihoods)
 likelihood = np.array(likelihood)
@@ -181,35 +183,28 @@ for i in range(k):
     data['weight_c'+str(i)]=b[i]
 \end{lstlisting}
 
-We ran the code for 1000 iterations. The convergence of log likelhood values for 10 clusters is as shown below. 
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{Convergence_parta_10}
-\end{figure}
-
-The values converge around 400 iterations.
+We ran the code for 200 iterations. 
 
 The following are the images obtained by replacing each pixel with the mean of its cluster center.     
 
    
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{parta_10_means}
+\includegraphics[width=0.7\textwidth]{fish_parta_means_10}
 \caption{10 Clusters}
 \end{figure}
 
    
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{parta_20_means}
+\includegraphics[width=0.7\textwidth]{fish_parta_means_20}
 \caption{20 Clusters}
 \end{figure}
 
     
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{parta_50_means}
+\includegraphics[width=0.7\textwidth]{fish_parta_means_50}
 \caption{50 Clusters}
 \end{figure}
 
@@ -220,34 +215,28 @@ The code for generating the above images is as shown below.
 \begin{lstlisting}
 def rescale_matrix(matrix, mode="int"):
     new_matrix = matrix
-    for col in range(640):
+    for col in range(working_w):
         new_matrix.loc[:, col] *= 255
     
     if mode == "int":
         new_matrix.astype(int)
     return new_matrix
+        
 
 def print_matrix_image(original_image, image):
     im2 = Image.new(original_image.mode, original_image.size)
     img = image.values.flatten()
     im2.putdata(img)
-    im2.show()
+    plt.imshow(im2)
 
-def matricize_list(image, img_w=640, img_h=480):
+def matricize_list(image, img_w=working_w, img_h=working_h):
     image_matrix = []
     for y in range(img_h):
         image_matrix.append(image[y*img_w:(y+1)*img_w])
     image_df = pd.DataFrame(image_matrix)
     return image_df
+    return image_df
 
-def rescale_weight_matrix(matrix, mode="int"):
-    new_matrix = matrix
-    for col in range(640):
-        new_matrix.loc[:, col] *= 1000
-    
-    if mode == "int":
-        new_matrix.astype(int)
-    return new_matrix
 
 matrix_mean_R = matricize_list(list(data["mean_R"]))
 matrix_mean_G = matricize_list(list(data["mean_G"]))
@@ -267,93 +256,39 @@ matrix_mean_RGB = pd.DataFrame(np.rec.fromarrays((matrix_mean_R.values, matrix_m
 print_matrix_image(working_image, matrix_mean_RGB)
 \end{lstlisting}
 
+We observe from the figures that all the cluster centers have same mean, i.e. they drift together and hence the mean image is just a single color. Its the same for k=10,20 and 50
+
 \subsection{Part b}
 
 We constructed the figures showing the weights linking each pixel to each cluster center. Following is the code which executes this.
 
 \begin{lstlisting}
-def print_matrix_weight(working_image, weight_image_matrix):
-    im2 = Image.new("L", working_image.size)
-    img = weight_image_matrix.values.flatten()
-    im2.putdata(img)
-    im2.show()
+fig = plt.figure(figsize=(12, 12))
+gs = gridspec.GridSpec(5, 2)
+gs.update(wspace=0.25, hspace=0.25)
 
-def weight_matrix_creation():
-    for i in range(10):
-        weight_image_matrix = matricize_list(list(data["weight_c"+str(i)]))
-        weight_matrix_rescaled = rescale_weight_matrix(weight_image_matrix)
-        print_matrix_weight(working_image, weight_matrix_rescaled)
-
-weight_image_matrix = matricize_list(list(data["weight_c9"]))    ##c9 is for cluster 10. for cluster i, it would be c i-1
-weight_matrix_rescaled = rescale_weight_matrix(weight_image_matrix)
-print_matrix_weight(working_image, weight_matrix_rescaled)
+for i in range(10):
+    ax = plt.subplot(gs[i])
+    a = data["weight_c"+str(i)].values.reshape(working_h,working_w)
+    plt.axis('off')
+    plt.title("Cluster "+ str(i+1))
+    ax.set_aspect('equal')
+    plt.imshow(a)
 \end{lstlisting}
 
 The images generated are as shown below.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{partb_wts_cluster0}
+\includegraphics[width=0.7\textwidth]{fish_wts_partb}
 \caption{Cluster 1}
 \end{figure}
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partb_wts_cluster1}
-\caption{Cluster 2}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partb_wts_cluster2}
-\caption{Cluster 3}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partb_wts_cluster3}
-\caption{Cluster 4}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partb_wts_cluster4}
-\caption{Cluster 5}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partb_wts_cluster5}
-\caption{Cluster 6}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partb_wts_cluster6}
-\caption{Cluster 7}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partb_wts_cluster7}
-\caption{Cluster 8}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partb_wts_cluster8}
-\caption{Cluster 9}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partb_wts_cluster9}
-\caption{Cluster 10}
-\end{figure}
+We can observe that all the weight maps look similar, which is the expected behavior as at this scale, all the pixels are essentially one cluster and hence the weights are the same.
 
 \subsection{Part c}
 
-We change the covariance to \(0.1 X I\) and ran the code. 
+We changed the covariance to \(0.1 I\) as well as  \(0.0025 I\) and ran the code. 
 
 \begin{lstlisting}
 rvalues=rgb_normalized_list[0].values.flatten()
@@ -368,7 +303,7 @@ cov = []
 for i in range(k):
     cov.append(0.1*np.eye(data.shape[1]))
 cov = np.array(cov)
-means,cov,weights,b,log_likelihoods,likelihood=EM_function(data,cov,k,500)
+means,weights,b,log_likelihoods,likelihood=EM_function(data,cov,k,200)
 #Plotting the log-likelihood
 plt.plot(log_likelihoods)
 likelihood = np.array(likelihood)
@@ -386,96 +321,52 @@ for i in range(k):
     data['weight_c'+str(i)]=b[i]
 \end{lstlisting}
 
-We ran the code for 500 iterations. The convergence of log likelhood values for 10 clusters is as shown below. 
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{Convergence_partb_10}
-\end{figure}
-
-The values converge around 200 iterations.
+We ran the code for 200 iterations. 
 
 The following are the images obtained by replacing each pixel with the mean of its cluster center. 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{partc_10_means}
-\caption{10 Clusters}
+\includegraphics[width=0.7\textwidth]{fish_partc_means_10_400}
+\caption{10 Clusters (0.0025 I)}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{partc_20_means}
-\caption{20 Clusters}
+\includegraphics[width=0.7\textwidth]{fish_partc_means_10}
+\caption{10 Clusters (0.1 I)}
 \end{figure}
 
+   
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{partc_50_means}
-\caption{50 Clusters}
+\includegraphics[width=0.7\textwidth]{fish_partc_means_20}
+\caption{20 Clusters (0.1 I)}
 \end{figure}
+
+    
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{fish_partc_means_50}
+\caption{50 Clusters (0.1 I)}
+\end{figure}
+
 
 Following are the new set of weight maps.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{partc_wts_cluster0}
-\caption{Cluster 1}
+\includegraphics[width=0.7\textwidth]{fish_wts_partc_10}
+\caption{Covariance = 0.1 I}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{partc_wts_cluster1}
-\caption{Cluster 2}
+\includegraphics[width=0.7\textwidth]{fish_wts_partc_400}
+\caption{Covariance = 0.0025 I}
 \end{figure}
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partc_wts_cluster2}
-\caption{Cluster 3}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partc_wts_cluster3}
-\caption{Cluster 4}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partc_wts_cluster4}
-\caption{Cluster 5}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partc_wts_cluster5}
-\caption{Cluster 6}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partc_wts_cluster6}
-\caption{Cluster 7}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partc_wts_cluster7}
-\caption{Cluster 8}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partc_wts_cluster8}
-\caption{Cluster 9}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partc_wts_cluster9}
-\caption{Cluster 10}
-\end{figure}
+We can observe that for covariance = 0.1I, the weights are not so different. But as we change the covariance to 0.0025I, we observe variation in weights image across the clusters, which means that the cluster centers do not drift together for covariance = 0.0025I. This also resulted in a better recovery of image by replacing the pixels with the mean value (Figure 5).
 
 \subsection{Part d}
 
@@ -494,7 +385,7 @@ cov = []
 for i in range(k):
     cov.append(np.array(data.cov()))
 cov = np.array(cov)
-means,cov,weights,b,log_likelihoods,likelihood=EM_function(data,cov,k,500)
+means,weights,b,log_likelihoods,likelihood=EM_function(data,cov,k,200)
 #Plotting the log-likelihood
 plt.plot(log_likelihoods)
 likelihood = np.array(likelihood)
@@ -512,32 +403,28 @@ for i in range(k):
     data['weight_c'+str(i)]=b[i]
 \end{lstlisting}
 
- We ran the code for 500 iterations. The convergence of log likelhood values for 10 clusters is as shown below. 
+ We ran the code for 200 iterations. 
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{Convergence_partd_10}
-\end{figure}
-
-The values converge around 100 iterations.
 
 The following are the images obtained by replacing each pixel with the mean of its cluster center. 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{partd_10_means}
+\includegraphics[width=0.7\textwidth]{fish_partd_means_10}
 \caption{10 Clusters}
 \end{figure}
 
+   
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{partd_20_means}
+\includegraphics[width=0.7\textwidth]{fish_partd_means_20}
 \caption{20 Clusters}
 \end{figure}
 
+    
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{partd_50_means}
+\includegraphics[width=0.7\textwidth]{fish_partd_means_50}
 \caption{50 Clusters}
 \end{figure}
 
@@ -545,64 +432,10 @@ Following are the new set of weight maps.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{partd_wts_cluster0}
-\caption{Cluster 1}
+\includegraphics[width=0.7\textwidth]{fish_wts_partd}
+\caption{}
 \end{figure}
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partd_wts_cluster1}
-\caption{Cluster 2}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partd_wts_cluster2}
-\caption{Cluster 3}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partd_wts_cluster3}
-\caption{Cluster 4}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partd_wts_cluster4}
-\caption{Cluster 5}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partd_wts_cluster5}
-\caption{Cluster 6}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partd_wts_cluster6}
-\caption{Cluster 7}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partd_wts_cluster7}
-\caption{Cluster 8}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partd_wts_cluster8}
-\caption{Cluster 9}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{partd_wts_cluster9}
-\caption{Cluster 10}
-\end{figure}
-
-
+We observe that he centers do not drift, and the maps are different from each other. The mean image aloso has many colors and could recover the original image to an extent. This is very different from part a and b, where the centers drift together and the mean image is a single color.
 
 \end{document}
